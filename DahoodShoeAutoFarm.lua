@@ -96,7 +96,7 @@ getgenv().farm = true
 
 newCon(game:GetService("UserInputService").InputBegan:Connect(function(input)
 	if input.KeyCode == Enum.KeyCode.F then
-		getgenv().farm = not getgenv().farm
+		getgenv().farm = false
 	end
 end))
 
