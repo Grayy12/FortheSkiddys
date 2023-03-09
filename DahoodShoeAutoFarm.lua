@@ -5,6 +5,7 @@ local g = getgenv()
 if g._connections then
 	for i, v in next, g._connections do
 		v:Disconnect()
+		v = nil
 	end
 else
 	g._connections = {}
